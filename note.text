@@ -1,0 +1,70 @@
+1. buat snippet sendiri untuk mempercepat kodingan kita.
+
+-klik file
+-klik preferences
+-klik configure user snippets
+-klik "new global snippet"
+-ketikan nama file nya "html.json" tekan ENTER
+kemudian akan muncul file html.json.code-snippets
+kemudian masukan kode pada link dibawah ini
+
+// klik link dibawah ini untuk mendapatkan kode html.json
+// https://github.com/sandhikagalih/pw2020_043040023/blob/master/kuliah/pertemuan10/html.json
+
+# isi kodingain ini 
+
+>>>
+{
+	"PHP Tag": {
+	  "prefix": "php",
+	  "body": "<?php $1 ?>"
+	},
+	"Inline Echo": {
+	  "prefix": "phpp",
+	  "body": "<?= $$1; ?>"
+	},
+	"Input Label": {
+	  "prefix": "formel",
+	  "body": [
+		"<label>",
+		"\t${3:Username}",
+		"\t<input type=\"${1:text}\" name=\"${2:username}\">",
+		"</label>"
+	  ]
+	},
+	"My Form": {
+	  "prefix": "myform",
+	  "body": "<form method=\"${1|get,post|}\" action=\"$2\">$3</form>"
+	}
+  }
+>>>
+dengan seperti ini kita dengan mudah mengetikan snippet hanya cukup ketikan "php" kemudian tekan "tab", maka akan tampil kodingan php 
+
+2. EXTENTION
+- buka extention kemudian cari/ketikan 
+- install php intelephense
+- klik install
+- untuk mengaktifkannya ada konfigurasi lagi kita non aktifkan 
+
+kita Disable "PHP Language Features"
+- kita cari/ketikan pada pencarian extension "@builtin php"
+- cari "PHP Language Features", 
+- kemudian klik "disable"
+- klik "reload required"
+- close
+
+jadi disini kita nonaktifkan bawaan php dari vscode nya agar dapat menampilkan kesalahan atau eror pada kodingan php yang kita buat
+
+3. aktifkan kode formatter
+	ini dilakukan agar kodingan kita otomatis di rapihkan ketika kita selesai mengetikanny/setelah disave otomatis dirapihkan
+- klik file
+- klik preferences
+- klik settings
+- kita "tab size"
+- kita ganti/masukan menjadi "2" karena defaultnya adalah "4"
+agar tidak terlalu jauh pas ditab
+- kemudian ketikan "format" pada pencarian
+- lalu cari "editor : FORMAT ON SAVE"
+- disini kita check list, karena defaultnya tidak di ceklis
+disini fungsi agar begitu kita save otomatis kode kita dirapihkan
+
